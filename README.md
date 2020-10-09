@@ -1,4 +1,4 @@
-# General purpose Docker image to login via SSH
+# General purpose Docker image (based on Fedora) to login via SSH
 
 Edit the `Dockerfile`, add you own list of Fedora packages, edit the user name,
 substitute the `authorized_keys` file content with your own public SSH keys and rebuild like this:
