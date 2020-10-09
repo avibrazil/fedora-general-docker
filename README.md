@@ -4,12 +4,12 @@ Edit the `Dockerfile`, add you own list of Fedora packages, edit the user name,
 substitute the `authorized_keys` file content with your own public SSH keys and rebuild like this:
 
 ```shell
-docker build --rm --build-arg USERNAME=myname -t myname/general-fedora .
+docker build --rm --build-arg USERNAME=myname -t myname/fedora-general .
 ```
 
 Then run it like this:
 ```shell
-docker run -d -p 2222:22 -v /home/in/host:/home/myname/host myname/general-fedora service nginx start
+docker run -d -p 2222:22 -v /home/in/host:/home/myname/host myname/fedora-general
 ```
 
 Then connect on port 2222 of host machine with your SSH client.
